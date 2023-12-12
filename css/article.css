@@ -1,0 +1,13 @@
+body > div > article{
+    min-height : 100vh;
+    padding-top: 100px;
+    display : flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 0 1 1100px;
+    align-items: center;
+  }
+
+  article p{
+    font-size: clamp(0.5rem, -0.15rem + 3.333vw, 1rem);
+  }

@@ -1,0 +1,28 @@
+.gallerie{
+display: flex;
+flex-wrap: wrap;
+gap: 80px;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+#gallerie h2{
+    color: aliceblue;
+}
+
+.galerie__figure{
+flex: 0 1 1100px;
+border: 1px dotted;
+}
+
+.gallerie__img{
+    filter: grayscale(100%);
+}
+
+.gallerie__img:hover{
+    filter: grayscale(0);
+}
+
+.gallerie__caption{
+color: aliceblue;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/tableau.css">
+    <link rel="stylesheet" href="css/gallerie.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Inconsolata&family=Lobster&family=Playfair+Display&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--debut header-->
+    <div id="entete">
+        <header class="entete">
+            <!--canva.com/templates pour logo-->
+            <img src="images/Logo.png" alt="">
+            <h1>Mon Portfolio</h1>
+            <!--https://svgbox.net/iconsets/-->
+            <label  id="burger" for="chk_burger">
+                <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32">
+            </label>
+            <input type="checkbox" id="chk_burger">
+            <nav class="navigation">
+                <a href="#accueil">Accueil</a>
+                <a href="#horaire">Horaire</a>
+                <a href="#inscription">Inscription</a> 
+                <a href="#article">Article</a> 
+                <a href="#gallerie">Gallerie</a> 
+                <a href="#video">Vidéos</a> 
+            </nav>
+        </header> 
+    </div>
+     <!--fin header-->
+     <!--debut accueil-->
+   <div id="accueil">
+    <section class="accueil" >
+        <h2>Accueil</h2>
+        <ul>
+            <li>TP2</li>
+            <li>Mon portfolio</li>
+            <li>Autrice : Chloé Brissette</li>
+            <li>582-1W1 - Mise en page Web</li>
+            <li>Techniques d'intégration multimédia</li>
+            <li>Collège de Maisonneuve</li>
+            <li>Adresse :</li>
+            <li>Automne 2023</li>
+        </ul>
+    </section>
+   </div>
+   <!--fin accueil-->
+   <!--debut horaire-->
+   <div id="horaire">
+    <section class="horaire">
+        <h2>Horaire</h2>
+        <table class="horaire__table">
+            <caption>Horaire session A2023</caption>
+            <!--tr(table row, definit les lignes) contient les jours de la semaine (o˘◡˘o)-->
+            <tr>
+                <th class="jours"> <code>&#128197</code></th>
+                <th class="jours">LUN</th>
+                <th class="jours">MAR</th>
+                <th class="jours">MER</th>
+                <th class="jours">JEU</th>
+                <th class="jours">VEN</th>
+            </tr>
+            <tr>
+                <th class="heure">8h</th>
+                <td class="vide"></td> <!--lundi-->
+                <td class="vide" rowspan="2"></td> <!--mardi-->
+                <td class="cours" rowspan="3">1M1</td> <!--mercredi-->
+                <td class="cours" rowspan="2">1w1</td> <!--jeudi-->
+                <td class="cours" rowspan="2">1M1</td> <!--vendredi-->
+            </tr>
+            <tr>
+                <th class="heure">9h</th>
+                <td class="cours" rowspan="3">1w1</td>
+            </tr>
+            <tr>
+                <th class="heure">10h</th>
+                <td class="cours" rowspan="2">102</td>
+                <td class="vide" rowspan="2"></td>
+                <td class="vide"></td>
+            </tr>
+            <tr>
+                <th class="heure">11h</th>
+                <td class="vide"> </td>
+                <td class="cours" rowspan="3">1j1</td>
+                
+            </tr>
+            <tr>
+                <th class="heure">12h</th>
+                <td class="vide" rowspan="3"></td>
+                <td class="libre" rowspan="2">pause</td>
+                <td class="cours" rowspan="3">1M2</td>
+                <td class="libre" rowspan="2">pause</td>
+            </tr>
+            <tr>
+                <th class="heure">13h</th>
+                <!--<td class="libre" >pause</td>-->
+                <!--<td class="libre">pause</td>-->
+            </tr>
+            <tr>
+                <th class="heure">14h</th>
+                <td class="cours" rowspan="3">1M2</td>
+                <td class="vide" rowspan="4"></td>
+                <td class="vide"></td>
+            </tr>
+            <tr>
+                <th class="heure">15h</th>
+                <td class="cours" rowspan="2">1j1</td>
+                <td class="vide" rowspan="3"> </td>
+                <td class="cours" rowspan="2">102</td>
+            </tr>
+            <tr>
+                <th class="heure">16h</th>
+            </tr>
+            <tr>
+                <th class="heure">17h</th>
+                <td class="vide"></td>
+                <td class="vide"></td>
+                <td class="vide"></td>
+            </tr>
+        </table>
+    </section>
+   </div>
+   <!--fin horaire-->
+   <!--debut formulaire-->
+   <div id="inscription">
+    <section class="inscription" >
+        <h2>Inscription</h2>
+        <form action="" class="formulaire">
+            <label class="form__nom" for="">Nom<input type="text"></label>
+            <label class="form__prenom" for="">Prenom<input type="text"></label>
+        <fieldset class="language">
+            <legend>language</legend>
+            <label for="chk_html">HTML<input id="chk_html" type="checkbox"></input></label>
+            <label for="">CSS<input type="checkbox"></input></label>
+            <label for="">JS<input type="checkbox"></input></label>
+        </fieldset>
+        <fieldset>
+            <!--Pour les radio boutons on crée un groupe en utilisant la meme valeur pour l'attribut name-->
+            <legend>Age</legend>
+            <label for="rad__1">11-15</label>
+            <input type="radio" name="age" id="rad__1">
+            <label for="rad__2">16-20</label>
+            <input type="radio" name="age" id="rad__2">
+            <label for="rad__3">21-25</label>
+            <input type="radio" name="age" id="rad__3">
+        </fieldset>
+        </form>
+    </section>
+   </div>
+   <!--fin formulaire-->
+   <!--debut article-->
+   <div id="article">
+   <article class="article__principal">
+    <h2>titre</h2>
+    <h3>sous-titre</h3>
+      <p><span>Placeat fuga eveniet unde odio cupiditate illo? Et placeat sit fugiat corrupti non sed facere natus, facilis temporibus error nulla perspiciatis cumque beatae saepe, molestiae ipsum laborum. Inventore, aliquam praesentium.</span><span>Dolorum repellendus soluta, sit explicabo, sunt enim a totam, deserunt numquam expedita architecto qui molestias consequatur? Tenetur, saepe iure atque voluptatem sint cupiditate optio, quod eveniet ad fuga id nulla.</span><span>Accusantium, sint. Veniam suscipit maiores ratione iure consequuntur quia at temporibus eaque dignissimos quasi nesciunt quisquam cumque, vitae aspernatur amet, officia eius accusantium pariatur reprehenderit repellendus placeat, labore nam distinctio?</span><span>Maiores repellat veritatis harum facere consectetur rerum adipisci, ad nesciunt quos officia neque eveniet provident temporibus, sequi ducimus distinctio tempora esse, amet consequuntur maxime. Amet adipisci temporibus ducimus obcaecati vel!</span><span>Tempore, maiores pariatur dolores quaerat numquam, ea vero sit deserunt, id quisquam nemo iste cupiditate. Expedita dicta autem sunt eum sit recusandae enim adipisci impedit, quos ullam, magnam tenetur quisquam!</p>
+        <figure><img src="images/chat.jpg" alt=""> <!--placeholder-->
+        <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</figcaption></figure>
+   </article>
+   </div>
+   <!--fin article-->
+    <!--debut gallerie-->
+   <div id="gallerie">
+    <section>
+        <h2>gallerie</h2>
+        <figure class="gallerie">
+            <figure class="gallerie__figure">
+                <img class="gallerie__img" src="images/image1.jpeg" alt="">
+                <figcaption class="gallerie__caption">Photo 07/08/2023</figcaption>
+            </figure>
+            <figure class="gallerie__figure">
+                <img class="gallerie__img" src="images/image2.jpeg" alt="">
+                <figcaption class="gallerie__caption">Photo 04/08/2023</figcaption>
+            </figure>
+            <figure class="gallerie__figure">
+                <img class="gallerie__img" src="images/image3.jpeg" alt="">
+                <figcaption class="gallerie__caption">Photo 06/10/2023</figcaption>
+            </figure>
+            <figure class="gallerie__figure">
+                <img class="gallerie__img" src="images/image4.jpeg" alt="">
+                <figcaption class="gallerie__caption">Photo 05/09/2023</figcaption>
+            </figure>
+            <figure class="gallerie__figure">
+                <img class="gallerie__img" src="images/image5.jpeg" alt="">
+                <figcaption class="gallerie__caption">Photo 05/09/2023</figcaption>
+            </figure>
+            <figure class="gallerie__figure">
+                <img class="gallerie__img" src="images/image6.jpeg" alt="">
+                <figcaption class="gallerie__caption">Photo 05/09/2023</figcaption>
+            </figure>
+        </figure>
+    </section>
+   </div>
+ <!--fin gallerie-->
+    <!--debut video-->
+    <div id="video">
+        <section>
+          
+        </section>
+       </div>
+     <!--fin video-->
+     
+   <!--debut footer-->
+   <div id="footer">
+    <footer>
+        <section class="pied__adresse">
+            <h3>Adresse</h3>
+            <ul>
+              <li>3800 Sherbrooke est</li>
+              <li>Montréal, QC</li>
+              <li>H1X 2A2</li>
+            </ul>
+          </section>
+          <section class="pied__lien">
+            <h3>Liens</h3>
+            <ul>
+                <li>https://www.w3schools.com/cssref/css_selectors.php</li>
+                <li>https://www.cmaisonneuve.qc.ca/</li>
+                <li>https://css-tricks.com/</li>
+              </ul>
+          </section>
+          <section class="pied__departement">
+            <h3>departement TIM</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil
+              ipsam rerum aliquid officiis! Nihil hic illum nemo soluta iure
+              possimus reiciendis deserunt. Magni impedit sint harum corporis quia
+            </p>
+          </section>
+          <section class="pied__sociaux">
+            <img src="images/facebook_32.png" alt="">
+            <img src="images/instagram_32.png" alt="">
+            <img src="images/youtube_32.png" alt="">
+        </section> 
+        <div class="pied__avis">
+            Avis de confidentialité | Privacy notice
+        </div>
+    </footer>
+   </div>
+   <!--fin footer-->
+</body>
+</html>
