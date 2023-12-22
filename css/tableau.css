@@ -1,30 +1,36 @@
 .horaire{
     border-collapse: collapse;
+    display: flex;
     flex: 0 1 1100px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    padding-left: 50px;
 }
 
+  /*modifications de paddings, font-size, color, 
+  font family,etc sur les elements du tableau*/
   
   #horaire h2{
     padding-left: 20px;
-    font-size: 30px;
   }
 
 .horaire td,th{
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 2rem;
 }
 
 .horaire th{
-    background-color: rgb(29, 69, 121);
+    background-color: rgba(29, 69, 121, 0.534);
     color: aliceblue;
 }
 
 .cours {
     font-family: 'Inconsolata', monospace;
-    background-color: rgb(91, 163, 192);
+    background-color: rgba(91, 163, 192, 0.491);
+    color: white;
     
 }
 
@@ -35,7 +41,7 @@
 .libre{
     font-family: 'Playfair Display', serif;
     
-    background-color: rgb(33, 85, 106);
+    background-color: rgba(33, 85, 106, 0.446);
     color: rgb(255, 255, 255);
     font: small;
 }
@@ -46,9 +52,10 @@
 
 caption{
     font-size: 2rem;
-    font-family: 'Foldit',sans-serif;
-    background-color: rgb(255, 255, 255);
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgba(255, 255, 255, 0.482);
     margin-top: 80px;
+    color: rgb(51, 0, 93);
 }
 
 .vide{

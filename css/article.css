@@ -1,13 +1,54 @@
-body > div > article{
-    min-height : 100vh;
-    padding-top: 100px;
-    display : flex;
-    flex-direction: column;
-    gap: 30px;
+#article{
+    display: flex;
+}
+
+.article{
+    display: flex;  
+    flex-direction: column; /*sections en colonnes*/
     flex: 0 1 1100px;
-    align-items: center;
+    gap: 60px; /*gap entre les sections*/
+}
+
+.article__section{
+ display: flex;
+ flex-direction: row;
+ gap: 70px;
+ flex: 1 1 300px;
+padding-left: 50px;
+padding-right: 50px;
+border-bottom:3px solid rgb(255, 255, 255); 
+justify-content: center;
+flex-wrap: wrap;
+padding-bottom: 100px;
+}
+
+.article__paragraphe{
+    flex: 0 1 350px; 
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem); /*font size pour les paragraphes*/
+    padding-bottom: 40px;
+}
+
+#article h2{
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.article__paragraphe,.article__figure{
+  color: azure;
+}
+
+.article__section:nth-of-type(even) {
+   flex-direction: row-reverse; /*images a droite et a gauche en alternance*/
   }
 
-  article p{
-    font-size: clamp(0.5rem, -0.15rem + 3.333vw, 1rem);
+  .article__figure{
+    font-size: clamp(0.5rem,2.5vw,1rem); /*font size pour la figure*/
+  }
+
+.article__figure:hover{
+  transform: rotate(10deg); /*rotate la photo quand on survole la photo*/
+}
+
+.article__img{
+    border-radius: 5px; /*arrondit les coins des photos*/
   }

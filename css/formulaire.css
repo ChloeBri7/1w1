@@ -1,34 +1,41 @@
 .formulaire{
 display: flex;
 flex-direction: column;
-gap: 10px;
+justify-content: center; /*place les elements du formulaire au centre*/
+gap: 15px;
+padding: 10%; 
+font-family: 'Titillium Web', sans-serif;
+background-color: rgba(110, 35, 153, 0.286);
+border-radius: 5%;
+ height: 70%; /*hauteur du formulaire*/
+ color: white;
+ margin-top: 100px;
+ margin-bottom: 20px;
 }
-
 
 .formulaire input[type="text"] {
-    background-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
 }
-
-.formulaire label{
-
-}
-
-.form__nom{
-
-}
-
-.form__prenom{}
 
 .formulaire fieldset{
-background-color: antiquewhite;
+background-color: rgb(174, 134, 225);
 display: flex;
-gap: 10px;
+align-items: center;  /*aligne les elemnts du fieldset au centre de celui ci*/
+gap: 5px;
 }
 
 .formulaire legend{
     font-size: 1.5rem;
-    padding: 3px;
 }
 
-.formulaire fieldset.language{
-    flex-direction: column;}
+.reset{
+    width: min-content; /*retrecit la largeur pour inclure seulement l'espace du contenu*/
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+
+
+
+
+

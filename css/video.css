@@ -1,0 +1,10 @@
+.lavideo{
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 3px solid rgb(74, 255, 186);
+    align-self: center; /*aligner la video au centre */
+}
+
+.video h2{
+    justify-self: flex-start;
+}
